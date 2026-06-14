@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 // ── INITIAL DATA (Japan 2026) ────────────────────────────────────────────────
 const INITIAL_TRIP = {
