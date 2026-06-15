@@ -10,7 +10,7 @@ const INITIAL_TRIP = {
   travelers: ["Jonna",""],
   cities: [
     {
-      id: "tokyo", name: "Tokyo", jp: "東京", emoji: "🗼",
+      id: "tokyo", gymTip:{name:"FIT PLACE24 Nishi-Shinjuku", desc:"24/7 · 15 min gang fra hotellet · 5 squat racks · Dagspas ~¥1.500 · Hent QR-kode fra kl. 11"}, name: "Tokyo", jp: "東京", emoji: "🗼",
       color: "#2c3e6b", dates: "28 jun – 3 jul",
       hotel: "Daiwa Roynet Hotel Nishi Shinjuku PREMIER",
       foodTips: [
@@ -75,7 +75,7 @@ const INITIAL_TRIP = {
       ]
     },
     {
-      id:"kyoto", name:"Kyoto", jp:"京都", emoji:"⛩",
+      id:"kyoto", gymTip:{name:"GYM valor PLAYPARK", desc:"24/7 · Nær Kyoto City Hall · Dagspas ¥3.300 · Book via app på forhånd", maps:"https://valor-kyoto.com/gym/"}, name:"Kyoto", jp:"京都", emoji:"⛩",
       color:"#7b4f2e", dates:"3 jul – 7 jul",
       hotel:"Nohga Hotel Kiyomizu Kyoto",
       foodTips: [
@@ -128,7 +128,7 @@ const INITIAL_TRIP = {
       ]
     },
     {
-      id:"osaka", name:"Osaka", jp:"大阪", emoji:"🏯",
+      id:"osaka", gymTip:{name:"Torque Gym Namba", desc:"24/7 · Namba · Høj-end udstyr · Dagspas ¥4.000 · Book online · Husk indendørs sko", maps:"https://torquegym.com/"}, name:"Osaka", jp:"大阪", emoji:"🏯",
       color:"#2e6b4f", dates:"7 jul – 10 jul",
       hotel:"DoubleTree by Hilton Osaka Castle",
       foodTips: [
@@ -167,7 +167,7 @@ const INITIAL_TRIP = {
       ]
     },
     {
-      id:"hiroshima", name:"Hiroshima", jp:"広島", emoji:"🕊",
+      id:"hiroshima", gymTip:{name:"Anytime Fitness ANA Hotel", desc:"24/7 · 5 min fra Hilton Hiroshima · 3 squat racks · Hammer Strength maskiner", maps:"https://www.anytimefitness.co.jp/anacrowneplazahotelhiroshima/"}, name:"Hiroshima", jp:"広島", emoji:"🕊",
       color:"#6b2c2c", dates:"10 jul – 12 jul",
       hotel:"Hilton Hiroshima",
       foodTips: [
@@ -257,6 +257,76 @@ const TAG_STYLE = {
   Oplevelse:{ bg:"#fff0e7", color:"#b84a00" },
   Taxa:     { bg:"#e8f4f8", color:"#1a5276" },
 };
+
+function ValutaTab() {
+  const RATE = 4.72;
+  const [jpy, setJpy] = React.useState("");
+  const [dkk, setDkk] = React.useState("");
+
+  const parseNum = v => parseFloat(v.replace(/[^\d,\.]/g,"").replace(",","."));
+
+  const handleJpy = v => {
+    setJpy(v);
+    const n = parseNum(v);
+    setDkk(isNaN(n) ? "" : (n/100*RATE).toFixed(2));
+  };
+  const handleDkk = v => {
+    setDkk(v);
+    const n = parseNum(v);
+    setJpy(isNaN(n) ? "" : String(Math.round(n/RATE*100)));
+  };
+  const setQuick = y => {
+    setJpy(String(y));
+    setDkk((y/100*RATE).toFixed(2));
+  };
+
+  const quick = [100,500,1000,2000,5000,10000,20000,50000];
+
+  return (
+    <div>
+      <div style={{background:"white",border:"1px solid #e8e4de",borderRadius:8,padding:"1.2rem",marginBottom:"1rem"}}>
+        <div style={{marginBottom:"1rem"}}>
+          <div style={{fontSize:"0.65rem",fontWeight:700,letterSpacing:"0.1em",color:"#7a7068",marginBottom:4}}>JAPANSKE YEN (¥)</div>
+          <input
+            type="text"
+            inputMode="numeric"
+            value={jpy}
+            onChange={e=>handleJpy(e.target.value)}
+            placeholder="fx 5000"
+            style={{width:"100%",fontSize:"1.4rem",fontWeight:600,border:"2px solid #e8e4de",borderRadius:6,padding:"0.7rem 0.8rem",outline:"none",boxSizing:"border-box",color:"#1a1a2e"}}
+          />
+        </div>
+        <div style={{textAlign:"center",fontSize:"1.4rem",color:"#b8860b",margin:"0.2rem 0"}}>↕</div>
+        <div style={{marginBottom:"0.8rem"}}>
+          <div style={{fontSize:"0.65rem",fontWeight:700,letterSpacing:"0.1em",color:"#7a7068",marginBottom:4}}>DANSKE KRONER (kr.)</div>
+          <input
+            type="text"
+            inputMode="decimal"
+            value={dkk}
+            onChange={e=>handleDkk(e.target.value)}
+            placeholder="fx 23.60"
+            style={{width:"100%",fontSize:"1.4rem",fontWeight:600,border:"2px solid #e8e4de",borderRadius:6,padding:"0.7rem 0.8rem",outline:"none",boxSizing:"border-box",color:"#1a1a2e"}}
+          />
+        </div>
+        <div style={{fontSize:"0.72rem",color:"#7a7068",textAlign:"center"}}>Kurs: ¥100 = {RATE.toFixed(2)} kr.</div>
+      </div>
+
+      <div style={{fontSize:"0.65rem",letterSpacing:"0.15em",textTransform:"uppercase",color:"#7a7068",fontWeight:700,marginBottom:"0.6rem"}}>Hurtig reference</div>
+      <div style={{background:"white",border:"1px solid #e8e4de",borderRadius:8,overflow:"hidden"}}>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",background:"#f7f4ef",padding:"0.4rem 1rem",borderBottom:"1px solid #e8e4de"}}>
+          <div style={{fontSize:"0.65rem",fontWeight:700,color:"#7a7068"}}>JPY ¥</div>
+          <div style={{fontSize:"0.65rem",fontWeight:700,color:"#7a7068",textAlign:"right"}}>DKK kr.</div>
+        </div>
+        {quick.map((y,i,arr)=>(
+          <div key={y} onClick={()=>setQuick(y)} style={{display:"grid",gridTemplateColumns:"1fr 1fr",padding:"0.65rem 1rem",borderBottom:i<arr.length-1?"1px solid #f7f4ef":"none",cursor:"pointer",background: parseFloat(String(jpy).replace(/\./g,""))==y?"#fffdf5":"white"}}>
+            <div style={{fontSize:"0.9rem",color:"#1a1a2e"}}>¥{y.toLocaleString("da-DK")}</div>
+            <div style={{fontSize:"0.9rem",fontWeight:600,color:"#b8860b",textAlign:"right"}}>{(y/100*RATE).toFixed(2).replace(".",",")} kr.</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 function TransitMarker({ from, to }) {
   const f = from.toUpperCase().replace(/[^A-Z0-9 ]/g, "");
@@ -615,7 +685,7 @@ export default function TravelApp() {
   const totalCost = trip.cities.reduce((s,c)=>s+c.days.reduce((s2,d)=>s2+d.activities.reduce((s3,a)=>s3+(a.cost||0),0),0),0);
   const packDone = trip.packing.filter(p=>p.checked).length;
   const packCats = [...new Set(trip.packing.map(p=>p.category))];
-  const tabs = [{id:"plan",icon:"🗺",label:"Rejseplan"},{id:"budget",icon:"💴",label:"Budget"},{id:"ai",icon:"✨",label:"Rejseguide"}];
+  const tabs = [{id:"plan",icon:"🗺",label:"Rejseplan"},{id:"budget",icon:"💴",label:"Budget"},{id:"valuta",icon:"💱",label:"Valuta"},{id:"ai",icon:"✨",label:"Rejseguide"}];
 
   return (
     <div style={{fontFamily:"system-ui,sans-serif",background:"#f7f4ef",minHeight:"100vh",maxWidth:700,margin:"0 auto"}}>
@@ -684,6 +754,18 @@ export default function TravelApp() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+          )}
+          {city.gymTip&&(
+            <div style={{background:"#f0f4ff",borderBottom:"1px solid #e8e4de",padding:"0.9rem 1.5rem"}}>
+              <div style={{fontSize:"0.65rem",letterSpacing:"0.15em",textTransform:"uppercase",color:"#3a5bd9",fontWeight:700,marginBottom:"0.5rem"}}>Fitness</div>
+              <div style={{display:"flex",gap:"0.7rem",alignItems:"flex-start"}}>
+                <span style={{fontSize:"1.1rem",flexShrink:0}}>🏋️</span>
+                <div>
+                  <div style={{fontSize:"0.82rem",fontWeight:700,color:"#1a1a2e"}}>{city.gymTip.name}</div>
+                  <div style={{fontSize:"0.72rem",color:"#5a6a9a",lineHeight:1.5,marginTop:2}}>{city.gymTip.desc}</div>
+                </div>
               </div>
             </div>
           )}
@@ -982,6 +1064,13 @@ export default function TravelApp() {
       )}
 
 
+
+      {tab==="valuta"&&(
+        <div style={{padding:"1rem"}}>
+          <div style={{fontSize:"0.65rem",letterSpacing:"0.15em",textTransform:"uppercase",color:"#7a7068",fontWeight:700,marginBottom:"1rem"}}>Valutaomregner</div>
+          <ValutaTab/>
+        </div>
+      )}
 
       {tab==="ai"&&(
         <div style={{padding:"1.5rem"}}>
