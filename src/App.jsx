@@ -117,8 +117,7 @@ const INITIAL_TRIP = {
           { time:"17:00", name:"Ninenzaka & Sannenzaka", desc:"Stenbelagte smorgader fra Edo-perioden. Endnu smukkere om aftenen med lanterner.", tags:["Kultur"], cost:0, inlineImg:"data:image/jpeg;base64,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" },
           { time:"19:00", name:"Aftensmad i Gion", desc:"Hanamikoji-gaden. Kaiseki fra ¥8.000.", tags:["Aften"], cost:5000 },
         ]},
-        { label:"Dag 11", date:"Tirsdag 7. juli — Shopping & afrejse Osaka", activities:[
-          { time:"09:00", name:"Shopping i Kyoto", desc:"Nyd en rolig morgenmad og udforsk lokale butikker i Higashiyama. Keramik, the, tekstiler og traditionelle souvenirs langs Ninenzaka og Sanjo-dori.", tags:["Shopping"], cost:0 },
+        { label:"Dag 11", date:"Tirsdag 7. juli — Afrejse Kyoto → Osaka", activities:[
           { time:"11:00", name:"Check-out Nohga Hotel", desc:"Send bagage direkte til Osaka-hotellet via takkyubin. Check-out senest 12:00.", tags:[], cost:2500 },
           { time:"12:00", name:"Shinkansen til Osaka", desc:"Hikari (JR Pass) 10 min eller Hankyu tog 40 min, ¥410.", tags:["Tog"], cost:410 },
           { time:"13:30", name:"Check-in DoubleTree by Hilton Osaka Castle", desc:"Direkte udsigt til Osaka Castle Park. Bagage ankommer dagen efter via takkyubin.", tags:[], cost:0 },
@@ -249,13 +248,18 @@ const INITIAL_TRIP = {
 const ACTIVITY_PHOTOS = {};
 
 const TAG_STYLE = {
-  Mad:      { bg:"#fdf3e7", color:"#9a5c0a" },
-  Kultur:   { bg:"#e7edf9", color:"#2c3e6b" },
-  Natur:    { bg:"#e7f3eb", color:"#2e6b4f" },
-  Tog:      { bg:"#f0e7f3", color:"#5c2e7a" },
-  Aften:    { bg:"#1a1a2e", color:"#f7f4ef" },
-  Oplevelse:{ bg:"#fff0e7", color:"#b84a00" },
-  Taxa:     { bg:"#e8f4f8", color:"#1a5276" },
+  Mad:        { bg:"#fdf3e7", color:"#9a5c0a" },
+  Kultur:     { bg:"#e7edf9", color:"#2c3e6b" },
+  Natur:      { bg:"#e7f3eb", color:"#2e6b4f" },
+  Tog:        { bg:"#f0e7f3", color:"#5c2e7a" },
+  Aften:      { bg:"#1a1a2e", color:"#f7f4ef" },
+  Oplevelse:  { bg:"#fff0e7", color:"#b84a00" },
+  Taxa:       { bg:"#e8f4f8", color:"#1a5276" },
+  Faerge:     { bg:"#e7f6fd", color:"#0a6b7a" },
+  Bus:        { bg:"#f3f0e7", color:"#6b5c0a" },
+  Shinkansen: { bg:"#fce8e8", color:"#7a0a0a" },
+  Metro:      { bg:"#ece7f3", color:"#3a2e6b" },
+  Lokaltog:   { bg:"#e9f0e7", color:"#2a5c2a" },
 };
 
 function ValutaTab() {
@@ -332,107 +336,220 @@ function TransitMarker({ from, to }) {
   const f = from.toUpperCase().replace(/[^A-Z0-9 ]/g, "");
   const t = to.toUpperCase().replace(/[^A-Z0-9 ]/g, "");
   const pairs = [
-    [["ANKOMST HANEDA","HND TERMINAL"], ["MINIVAN","TAXA"],         "baggage + IC-kort 15 min", "🧳"],
-    [["GOVERNMENT","METROPOLITAN"],  ["SHINJUKU GYOEN"],            "5 min gang", "🚶"],
-    [["SHINJUKU GYOEN"],             ["ICHIRAN","RAMEN"],           "8 min gang", "🚶"],
-    [["ICHIRAN","RAMEN"],            ["HARAJUKU","TAKESHITA"],      "2 min Yamanote 1 stop", "🚇"],
-    [["HARAJUKU","TAKESHITA"],       ["OMOTESANDO","SHIBUYA"],      "10 min gang", "🚶"],
-    [["SHIBUYA","SCRAMBLE"],         ["OMOIDE","YOKOCHO"],          "6 min Yamanote til Shinjuku", "🚇"],
-    [["SENSOJI","ASAKUSA"],          ["FROKOST","SUSHI"],           "5 min gang", "🚶"],
-    [["FROKOST","SUSHI"],            ["GOKART","STREET"],           "3 min gang", "🚶"],
-    [["GOKART"],                     ["AKIHABARA"],                 "15 min gang", "🚶"],
-    [["KAWAGUCHIKO"],                ["CHUREITO"],                  "10 min tog til Fujiyoshida", "🚇"],
-    [["CHUREITO"],                   ["HOTO","FROKOST"],            "15 min gang til soen", "🚶"],
-    [["HAMARIKYU"],                  ["TSUKIJI"],                   "15 min gang", "🚶"],
-    [["TSUKIJI"],                    ["GINZA"],                     "12 min gang", "🚶"],
-    [["GINZA"],                      ["AFTENSMAD","TEMPURA"],       "2 min gang i Ginza", "🚶"],
-    [["SEND BAGAGE"],                ["DAGSTUR TIL KAMAKURA"],      "55 min Shonan-Shinjuku til Kamakura", "🚇"],
-    [["DAGSTUR TIL KAMAKURA"],       ["KOTOKUIN","BUDDHA"],         "10 min gang fra Kamakura St.", "🚶"],
-    [["KOTOKUIN","BUDDHA"],          ["HASEDERA"],                  "10 min gang", "🚶"],
-    [["HASEDERA"],                   ["KOMACHIDORI","KOMACHI"],     "15 min gang", "🚶"],
-    [["KOMACHIDORI","KOMACHI"],      ["TOG KAMAKURA","SHINAGAWA"],  "5 min gang til Kamakura St.", "🚶"],
-    [["TOG KAMAKURA","SHINAGAWA"],   ["SHINKANSEN TIL KYOTO"],      "skift til Shinkansen pa Shinagawa", "🚄"],
-    [["NINENZAKA","SANNENZAKA"],     ["AFTENSMAD I GION"],          "10 min gang til Gion", "🚶"],
-    [["KIYOMIZUDERA"],               ["MORGENMAD"],                 "2 min gang ned ad trapperne", "🚶"],
-    [["FUSHIMI","INARI"],            ["NISHIKI"],                   "20 min Keihan til Shijo", "🚇"],
-    [["NISHIKI"],                    ["NANZENJI","TOFU"],           "20 min gang", "🚶"],
-    [["NANZENJI TEMPEL"],            ["PHILOSOPHERS"],              "5 min - stien starter her", "🚶"],
-    [["PHILOSOPHERS"],               ["PONTOCHO"],                  "20 min metro til Kawaramachi", "🚇"],
-    [["SAGANO BAMBOO","BAMBOO GROVE"],["TENRYUJI"],                 "5 min gang", "🚶"],
-    [["TENRYUJI"],                   ["TOGETSUKYO","FROKOST"],      "8 min gang til broen", "🚶"],
-    [["TOGETSUKYO","FROKOST"],       ["JOJAKKO","NISON"],           "15 min op ad bakkerne", "🚶"],
-    [["DAGSTUR TIL NARA"],           ["TODAIJI","NARA PARK"],       "10 min gang fra Nara St.", "🚶"],
-    [["TODAIJI","NARA PARK"],        ["KINKAKUJI"],                 "45 min tog + 10 min bus", "🚇"],
-    [["KINKAKUJI"],                  ["RYOANJI"],                   "10 min gang", "🚶"],
-    [["MARUYAMA","YASAKA"],          ["SHINKANSEN TIL OSAKA"],      "25 min til Kyoto Station", "🚇"],
-    [["SHINKANSEN TIL OSAKA"],       ["OSAKA CASTLE"],              "20 min metro til hotellet", "🚇"],
-    [["KUROMON"],                    ["SHINSEKAI"],                 "10 min metro", "🚇"],
-    [["SHINSEKAI"],                  ["INDENDRS","SHOPPING"],       "8 min metro til Namba", "🚇"],
-    [["INDENDRS","SHOPPING"],        ["AMERIKAMURA"],               "5 min gang", "🚶"],
-    [["AMERIKAMURA"],                ["UBER","ASAOKA"],             "Bestil Uber - ca. 10 min", "🚗"],
-    [["UMEDA SKY"],                  ["FUKUSHIMA"],                 "4 min tog 2 stationer", "🚇"],
-    [["FUKUSHIMA"],                  ["SHITENNOJI","TENNOJI"],      "20 min metro", "🚇"],
-    [["SHITENNOJI","TENNOJI"],       ["ABENO","HARUKAS"],           "5 min gang", "🚶"],
-    [["ABENO","HARUKAS"],            ["DOTONBORI"],                 "15 min metro til Namba", "🚇"],
-    [["OSAKA CASTLE PARK"],          ["SHINKANSEN TIL HIROSHIMA"],  "25 min metro til Shin-Osaka", "🚇"],
-    [["SHINKANSEN TIL HIROSHIMA"],   ["HIROSHIMA PEACE"],           "15 min gang fra Hiroshima St.", "🚶"],
-    [["HIROSHIMA PEACE MEMORIAL PARK"],["OKONOMIYAKI"],             "10 min gang til centrum", "🚶"],
-    [["ITSUKUSHIMA"],                ["VANDRING","MISEN"],          "10 min linbane eller 1,5t vandring", "🚠"],
-    [["MISEN"],                      ["MOMIJI","STERS"],            "20 min ned til havnen", "🚶"],
-    [["MOMIJI","STERS"],             ["TILBAGE TIL HIROSHIMA"],     "Faerge 10 min + 30 min tog", "⛴"],
-    [["TILBAGE TIL HIROSHIMA"],      ["HONDORI"],                   "10 min gang til centrum", "🚶"],
-    [["PEACE MEMORIAL MUSEUM"],      ["SHINKANSEN TIL TOKYO"],      "15 min gang til Hiroshima St.", "🚶"],
-    [["SHINKANSEN TIL TOKYO"],       ["AFSKEDSMIDDAG"],             "5 min gang i Tokyo", "🚶"],
-    [["AFSKEDSMIDDAG"],              ["TIL HANEDA","HND TERMINAL"], "15 min Keikyu til Haneda T3", "🚇"],
-    [["ASAKUSA SUMO"],               ["HOTEL","SHINJUKU"],          "25 min - Asakusa metro til Shinjuku", "🚇"],
+    // DAG 1
+    [["ANKOMST HANEDA","HND TERMINAL"], ["MINIVAN","TAXA"],              "45 min",        "Taxi · HND T3 → Shinjuku",             "uber"],
+    // DAG 2 — SHINJUKU & SHIBUYA
+    [["DAIWA","SHINJUKU PREMIER"],      ["METROPOLITAN","GOVERNMENT"],   "5 min",         "Gang",                                 "gang"],
+    [["GOVERNMENT","METROPOLITAN"],     ["SHINJUKU GYOEN"],               "10 min",        "Gang",                                 "gang"],
+    [["SHINJUKU GYOEN"],                 ["ICHIRAN","RAMEN","FROKOST"],   "8 min",         "Gang",                                 "gang"],
+    [["ICHIRAN","RAMEN","FROKOST"],     ["HARAJUKU","TAKESHITA"],       "2 min",         "Metro · Yamanote · Shinjuku→Harajuku", "metro"],
+    [["HARAJUKU","TAKESHITA"],           ["OMOTESANDO","SHIBUYA"],        "10 min",        "Gang",                                 "gang"],
+    [["SHIBUYA","SCRAMBLE"],             ["OMOIDE","YOKOCHO"],            "6 min",         "Metro · Yamanote · Shibuya→Shinjuku",  "metro"],
+    [["OMOIDE","YOKOCHO"],               ["HOTEL","SHINJUKU"],            "5 min",         "Gang",                                 "gang"],
+    // DAG 3 — ASAKUSA & GOKART
+    [["DAIWA","SHINJUKU PREMIER"],       ["SENSO-JI","ASAKUSA"],          "30 min",        "Metro · Oedo Line · Shinjuku→Asakusa", "metro"],
+    [["SENSOJI","ASAKUSA"],              ["FROKOST","SUSHI"],             "5 min",         "Gang",                                 "gang"],
+    [["FROKOST","SUSHI"],                ["GOKART","STREET"],             "3 min",         "Gang",                                 "gang"],
+    [["GOKART"],                           ["ASAKUSA SUMO"],                  "10 min",        "Gang",                                 "gang"],
+    [["ASAKUSA SUMO"],                     ["HOTEL","SHINJUKU"],            "25 min",        "Metro · Oedo Line · Asakusa→Shinjuku", "metro"],
+    // DAG 4 — FUJI
+    [["DAIWA","SHINJUKU PREMIER"],       ["TOG FRA SHINJUKU","KAWAGUCHI"],"5 min",         "Gang til Shinjuku St.",                "gang"],
+    [["TOG FRA SHINJUKU","KAWAGUCHI"],   ["KAWAGUCHIKO"],                  "2t",            "Lokaltog · Chuo+Fujikyu · Shinjuku→Kawaguchiko", "lokaltog"],
+    [["KAWAGUCHIKO"],                      ["CHUREITO"],                      "10 min",        "Bus · linje 2 → Shimo-Yoshida",        "bus"],
+    [["CHUREITO"],                         ["HOTO","FROKOST"],              "15 min",        "Gang ned til søen",                    "gang"],
+    [["HOTO","FROKOST"],                 ["TOG RETUR","AFTENSMAD"],       "5 min",         "Gang til Kawaguchiko St.",             "gang"],
+    [["TOG RETUR","AFTENSMAD"],          ["HOTEL","SHINJUKU"],            "2t",            "Lokaltog · Fujikyu+Chuo · Kawaguchiko→Shinjuku", "lokaltog"],
+    // DAG 5 — HAMARIKYU, GHIBLI & AKIHABARA
+    [["DAIWA","SHINJUKU PREMIER"],       ["HAMARIKYU"],                     "25 min",        "Metro · Oedo Line · Shinjuku→Shiodome", "metro"],
+    [["HAMARIKYU"],                        ["TSUKIJI"],                       "15 min",        "Gang",                                 "gang"],
+    [["TSUKIJI"],                          ["GINZA"],                         "12 min",        "Gang",                                 "gang"],
+    [["GINZA"],                            ["GHIBLI","MITAKA"],             "30 min",        "Metro · Marunouchi→Chuo · Shinjuku→Mitaka", "metro"],
+    [["GHIBLI","MITAKA"],                ["AKIHABARA"],                     "40 min",        "Lokaltog · Chuo Line · Mitaka→Akihabara", "lokaltog"],
+    [["AKIHABARA"],                        ["AFTENSMAD","TEMPURA"],         "5 min",         "Gang",                                 "gang"],
+    [["AFTENSMAD","TEMPURA"],            ["HOTEL","SHINJUKU"],            "15 min",        "Metro · Yamanote · Akihabara→Shinjuku", "metro"],
+    // DAG 6 — KAMAKURA
+    [["DAIWA","SHINJUKU PREMIER"],       ["SEND BAGAGE","TAKKYUBIN"],     "",              "Reception i hotellet",                 "bagage"],
+    [["SEND BAGAGE"],                      ["DAGSTUR TIL KAMAKURA"],          "55 min",        "Lokaltog · Shonan-Shinjuku · Shinjuku→Kamakura", "lokaltog"],
+    [["DAGSTUR TIL KAMAKURA"],             ["KOTOKUIN","BUDDHA"],           "10 min",        "Gang fra Kamakura St.",                "gang"],
+    [["KOTOKUIN","BUDDHA"],              ["HASEDERA"],                      "10 min",        "Gang",                                 "gang"],
+    [["HASEDERA"],                         ["KOMACHIDORI","KOMACHI","FROKOST"],"15 min",   "Gang",                                 "gang"],
+    [["KOMACHIDORI","KOMACHI","FROKOST"],[["TOG KAMAKURA","SHINAGAWA"]],"5 min",         "Gang til Kamakura St.",                "gang"],
+    [["TOG KAMAKURA","SHINAGAWA"],       ["SHINKANSEN TIL KYOTO"],          "55 min",        "Lokaltog · Yokosuka Line · Kamakura→Shinagawa", "lokaltog"],
+    // DAG 7 — KYOTO ANKOMST
+    [["SHINKANSEN TIL KYOTO"],             ["ANKOMST KYOTO","CHECK-IN"],    "2t 15 min",     "Shinkansen · Hikari · Shinagawa→Kyoto", "shinkansen"],
+    [["NOHGA","KIYOMIZU"],               ["ANKOMST KYOTO","CHECK-IN"],    "10 min",        "Taxa · Kyoto St. → Nohga Hotel",       "uber"],
+    // DAG 8 — KIYOMIZUDERA & FILOSOFSTIEN
+    [["NOHGA","KIYOMIZU"],               ["KIYOMIZUDERA"],                  "10 min",        "Gang",                                 "gang"],
+    [["KIYOMIZUDERA"],                     ["MORGENMAD"],                     "2 min",         "Gang ned ad trapperne",                "gang"],
+    [["FUSHIMI","INARI"],                ["NISHIKI"],                       "20 min",        "Lokaltog · Keihan · Fushimi Inari→Shijo", "lokaltog"],
+    [["NISHIKI"],                          ["NANZENJI","TOFU"],             "20 min",        "Gang",                                 "gang"],
+    [["NANZENJI TEMPEL"],                  ["PHILOSOPHERS"],                  "5 min",         "Gang — stien starter her",             "gang"],
+    [["PHILOSOPHERS"],                     ["PONTOCHO"],                      "20 min",        "Metro · Tozai Line → Kawaramachi",     "metro"],
+    [["PONTOCHO"],                         ["HOTEL","NOHGA"],               "10 min",        "Gang",                                 "gang"],
+    // DAG 9 — ARASHIYAMA & KURAMA
+    [["NOHGA","KIYOMIZU"],               ["SAGANO","BAMBOO"],             "30 min",        "Lokaltog · JR Sagano Line · Kyoto→Saga-Arashiyama", "lokaltog"],
+    [["SAGANO BAMBOO","BAMBOO GROVE"],   ["TENRYUJI"],                      "5 min",         "Gang",                                 "gang"],
+    [["TENRYUJI"],                         ["TOGETSUKYO","FROKOST"],        "8 min",         "Gang til broen",                       "gang"],
+    [["TOGETSUKYO","FROKOST"],           ["KURAMA"],                        "15 min",        "Gang op ad bakkerne",                  "gang"],
+    [["KURAMA"],                           ["PONTOCHO"],                      "40 min",        "Lokaltog · Eizan Railway → Demachiyanagi", "lokaltog"],
+    [["AFTENSMAD"],                        ["HOTEL","NOHGA"],               "10 min",        "Gang",                                 "gang"],
+    // DAG 10 — NARA & KINKAKUJI
+    [["NOHGA","KIYOMIZU"],               ["DAGSTUR TIL NARA"],              "45 min",        "Lokaltog · Kintetsu Line · Kyoto→Nara", "lokaltog"],
+    [["DAGSTUR TIL NARA"],                 ["TODAIJI","NARA PARK"],         "10 min",        "Gang fra Nara St.",                    "gang"],
+    [["TODAIJI","NARA PARK"],            ["KINKAKUJI"],                     "45 min",        "Lokaltog · Kintetsu→Kyoto + bus 101",  "lokaltog"],
+    [["KINKAKUJI"],                        ["RYOANJI"],                       "10 min",        "Gang",                                 "gang"],
+    [["RYOANJI"],                          ["NINENZAKA","SANNENZAKA"],      "30 min",        "Bus · linje 59→100 · Ryoanji→Higashiyama", "bus"],
+    [["NINENZAKA","SANNENZAKA"],         ["AFTENSMAD I GION"],              "10 min",        "Gang til Gion",                        "gang"],
+    [["AFTENSMAD I GION"],                 ["HOTEL","NOHGA"],               "10 min",        "Gang",                                 "gang"],
+    // DAG 11 — OSAKA
+    [["MARUYAMA","YASAKA"],              ["SHINKANSEN TIL OSAKA"],          "25 min",        "Metro · Tozai Line → Kyoto St.",       "metro"],
+    [["SHINKANSEN TIL OSAKA"],             ["CHECK-IN","DOUBLETREE"],       "15 min",        "Shinkansen · Hikari · Kyoto→Shin-Osaka", "shinkansen"],
+    [["CHECK-IN","DOUBLETREE"],          ["OSAKA CASTLE"],                  "20 min",        "Metro · Tanimachi Line · Shin-Osaka→hotel", "metro"],
+    [["OSAKA CASTLE"],                     ["AFTENSMAD"],                     "10 min",        "Gang",                                 "gang"],
+    // DAG 12 — KUROMON & DOTONBORI
+    [["DOUBLETREE","OSAKA CASTLE"],      ["KUROMON"],                       "15 min",        "Metro · Tanimachi Line → Nipponbashi", "metro"],
+    [["KUROMON"],                          ["SHINSEKAI"],                     "10 min",        "Metro · Sakaisuji Line · 1 stop",      "metro"],
+    [["SHINSEKAI"],                        ["INDENDRS","SHOPPING"],         "8 min",         "Metro · Midosuji Line → Namba",        "metro"],
+    [["INDENDRS","SHOPPING"],            ["AMERIKAMURA"],                   "5 min",         "Gang",                                 "gang"],
+    [["AMERIKAMURA"],                      ["UBER","ASAOKA"],               "10 min",        "Uber",                                 "uber"],
+    [["MIDDAG MED NIKOLAS"],               ["HOTEL","DOUBLETREE"],          "10 min",        "Uber",                                 "uber"],
+    // DAG 13 — UMEDA & HARUKAS
+    [["DOUBLETREE","OSAKA CASTLE"],      ["UMEDA SKY"],                     "20 min",        "Metro · Tanimachi Line → Umeda",       "metro"],
+    [["UMEDA SKY"],                        ["FUKUSHIMA"],                     "4 min",         "Lokaltog · JR Osaka Loop · 2 stop",    "lokaltog"],
+    [["FUKUSHIMA"],                        ["SHITENNOJI","TENNOJI"],        "20 min",        "Metro · Midosuji Line → Tennoji",      "metro"],
+    [["SHITENNOJI","TENNOJI"],           ["ABENO","HARUKAS"],             "5 min",         "Gang",                                 "gang"],
+    [["ABENO","HARUKAS"],               ["DOTONBORI"],                      "15 min",        "Metro · Midosuji Line → Namba",        "metro"],
+    [["DOTONBORI"],                        ["HOTEL","DOUBLETREE"],          "15 min",        "Metro · Midosuji→Tanimachi Line",      "metro"],
+    // DAG 14 — HIROSHIMA
+    [["DOUBLETREE","OSAKA CASTLE"],      ["SEND BAGAGE","TAKKYUBIN"],     "",              "Reception i hotellet",                 "bagage"],
+    [["OSAKA CASTLE PARK"],                ["SHINKANSEN TIL HIROSHIMA"],      "25 min",        "Metro · Tanimachi Line → Shin-Osaka",  "metro"],
+    [["SHINKANSEN TIL HIROSHIMA"],         ["CHECK-IN HILTON","HIROSHIMA"], "1t 25 min",     "Shinkansen · Nozomi · Shin-Osaka→Hiroshima", "shinkansen"],
+    [["HILTON HIROSHIMA"],                 ["CHECK-IN HILTON"],               "15 min",        "Taxa · Hiroshima St. → Hilton",        "uber"],
+    [["HILTON HIROSHIMA"],                 ["SEND BAGAGE","TAKKYUBIN"],     "",              "Reception i hotellet",                 "bagage"],
+    [["HILTON HIROSHIMA"],                 ["HIROSHIMA PEACE"],               "15 min",        "Gang",                                 "gang"],
+    // DAG 15 — MIYAJIMA
+    [["HILTON HIROSHIMA"],                 ["FAERGE","MIYAJIMA"],           "40 min",        "Sporvogn · linje 2 → Miyajimaguchi St.", "metro"],
+    [["FAERGE","MIYAJIMA"],              ["ITSUKUSHIMA"],                   "10 min",        "Færge · JR · Miyajimaguchi→Miyajima",  "faerge"],
+    [["ITSUKUSHIMA"],                      ["VANDRING","MISEN"],            "10 min / 1,5t", "Linbane eller vandring",               "gang"],
+    [["MISEN"],                            ["MOMIJI","STERS"],              "20 min",        "Gang ned til havnen",                  "gang"],
+    [["MOMIJI","STERS"],                 ["TILBAGE TIL HIROSHIMA"],         "10 min",        "Færge · JR · Miyajima→Miyajimaguchi",  "faerge"],
+    [["TILBAGE TIL HIROSHIMA"],            ["HONDORI"],                       "40 min",        "Lokaltog · JR Sanyo · Miyajimaguchi→Hiroshima", "lokaltog"],
+    [["HONDORI"],                          ["HOTEL","HILTON"],              "15 min",        "Gang",                                 "gang"],
+    // DAG 16 — HJEM
+    [["HILTON HIROSHIMA"],                 ["HIROSHIMA PEACE MEMORIAL"],      "15 min",        "Gang",                                 "gang"],
+    [["HIROSHIMA PEACE MEMORIAL PARK"],    ["SHINKANSEN TIL TOKYO"],          "15 min",        "Gang til Hiroshima St.",               "gang"],
+    [["PEACE MEMORIAL MUSEUM"],            ["SHINKANSEN TIL TOKYO"],          "15 min",        "Gang til Hiroshima St.",               "gang"],
+    [["SHINKANSEN TIL TOKYO"],             ["AFSKEDSMIDDAG"],                 "4t",            "Shinkansen · Nozomi · Hiroshima→Tokyo", "shinkansen"],
+    [["AFSKEDSMIDDAG"],                    ["TIL HANEDA","HND TERMINAL"],   "15 min",        "Metro · Keikyu Line → Haneda T3",      "metro"],
+    [["GOVERNMENT","METROPOLITAN"],  ["SHINJUKU GYOEN"],            "5 min",         "Gang",                "gang"],
+    [["SHINJUKU GYOEN"],             ["ICHIRAN","RAMEN"],           "8 min",         "Gang",                "gang"],
+    [["ICHIRAN","RAMEN"],            ["HARAJUKU","TAKESHITA"],      "2 min",         "Metro · Yamanote",    "metro"],
+    [["HARAJUKU","TAKESHITA"],       ["OMOTESANDO","SHIBUYA"],      "10 min",        "Gang",                "gang"],
+    [["SHIBUYA","SCRAMBLE"],         ["OMOIDE","YOKOCHO"],          "6 min",         "Metro · Yamanote",    "metro"],
+    [["SENSOJI","ASAKUSA"],          ["FROKOST","SUSHI"],           "5 min",         "Gang",                "gang"],
+    [["FROKOST","SUSHI"],            ["GOKART","STREET"],           "3 min",         "Gang",                "gang"],
+    [["GOKART"],                     ["AKIHABARA"],                 "15 min",        "Gang",                "gang"],
+    [["KAWAGUCHIKO"],                ["CHUREITO"],                  "10 min",        "Lokaltog",            "lokaltog"],
+    [["CHUREITO"],                   ["HOTO","FROKOST"],            "15 min",        "Gang",                "gang"],
+    [["HAMARIKYU"],                  ["TSUKIJI"],                   "15 min",        "Gang",                "gang"],
+    [["TSUKIJI"],                    ["GINZA"],                     "12 min",        "Gang",                "gang"],
+    [["GINZA"],                      ["AFTENSMAD","TEMPURA"],       "2 min",         "Gang",                "gang"],
+    [["SEND BAGAGE"],                ["DAGSTUR TIL KAMAKURA"],      "55 min",        "Lokaltog · Shonan-Shinjuku", "lokaltog"],
+    [["DAGSTUR TIL KAMAKURA"],       ["KOTOKUIN","BUDDHA"],         "10 min",        "Gang",                "gang"],
+    [["KOTOKUIN","BUDDHA"],          ["HASEDERA"],                  "10 min",        "Gang",                "gang"],
+    [["HASEDERA"],                   ["KOMACHIDORI","KOMACHI"],     "15 min",        "Gang",                "gang"],
+    [["KOMACHIDORI","KOMACHI"],      ["TOG KAMAKURA","SHINAGAWA"],  "5 min",         "Gang til Kamakura St.", "gang"],
+    [["TOG KAMAKURA","SHINAGAWA"],   ["SHINKANSEN TIL KYOTO"],      "skift",         "Shinkansen · Shinagawa St.", "shinkansen"],
+    [["NINENZAKA","SANNENZAKA"],     ["AFTENSMAD I GION"],          "10 min",        "Gang",                "gang"],
+    [["KIYOMIZUDERA"],               ["MORGENMAD"],                 "2 min",         "Gang",                "gang"],
+    [["FUSHIMI","INARI"],            ["NISHIKI"],                   "20 min",        "Lokaltog · Keihan",   "lokaltog"],
+    [["NISHIKI"],                    ["NANZENJI","TOFU"],           "20 min",        "Gang",                "gang"],
+    [["NANZENJI TEMPEL"],            ["PHILOSOPHERS"],              "5 min",         "Gang",                "gang"],
+    [["PHILOSOPHERS"],               ["PONTOCHO"],                  "20 min",        "Metro",               "metro"],
+    [["SAGANO BAMBOO","BAMBOO GROVE"],["TENRYUJI"],                 "5 min",         "Gang",                "gang"],
+    [["TENRYUJI"],                   ["TOGETSUKYO","FROKOST"],      "8 min",         "Gang",                "gang"],
+    [["TOGETSUKYO","FROKOST"],       ["JOJAKKO","NISON"],           "15 min",        "Gang",                "gang"],
+    [["DAGSTUR TIL NARA"],           ["TODAIJI","NARA PARK"],       "10 min",        "Gang fra Nara St.",   "gang"],
+    [["TODAIJI","NARA PARK"],        ["KINKAKUJI"],                 "45 min + 10 min","Lokaltog + Bus",     "lokaltog"],
+    [["KINKAKUJI"],                  ["RYOANJI"],                   "10 min",        "Gang",                "gang"],
+    [["MARUYAMA","YASAKA"],          ["SHINKANSEN TIL OSAKA"],      "25 min",        "Metro til Kyoto St.", "metro"],
+    [["SHINKANSEN TIL OSAKA"],       ["OSAKA CASTLE"],              "20 min",        "Metro",               "metro"],
+    [["KUROMON"],                    ["SHINSEKAI"],                 "10 min",        "Metro",               "metro"],
+    [["SHINSEKAI"],                  ["INDENDRS","SHOPPING"],       "8 min",         "Metro til Namba",     "metro"],
+    [["INDENDRS","SHOPPING"],        ["AMERIKAMURA"],               "5 min",         "Gang",                "gang"],
+    [["AMERIKAMURA"],                ["UBER","ASAOKA"],             "ca. 10 min",    "Uber",                "uber"],
+    [["UMEDA SKY"],                  ["FUKUSHIMA"],                 "4 min",         "Lokaltog · 2 stop",   "lokaltog"],
+    [["FUKUSHIMA"],                  ["SHITENNOJI","TENNOJI"],      "20 min",        "Metro",               "metro"],
+    [["SHITENNOJI","TENNOJI"],       ["ABENO","HARUKAS"],           "5 min",         "Gang",                "gang"],
+    [["ABENO","HARUKAS"],            ["DOTONBORI"],                 "15 min",        "Metro til Namba",     "metro"],
+    [["OSAKA CASTLE PARK"],          ["SHINKANSEN TIL HIROSHIMA"],  "25 min",        "Metro til Shin-Osaka","metro"],
+    [["SHINKANSEN TIL HIROSHIMA"],   ["HIROSHIMA PEACE"],           "15 min",        "Gang fra Hiroshima St.", "gang"],
+    [["HIROSHIMA PEACE MEMORIAL PARK"],["OKONOMIYAKI"],             "10 min",        "Gang",                "gang"],
+    [["ITSUKUSHIMA"],                ["VANDRING","MISEN"],          "10 min / 1,5t", "Linbane eller vandring","gang"],
+    [["MISEN"],                      ["MOMIJI","STERS"],            "20 min",        "Gang ned til havnen", "gang"],
+    [["MOMIJI","STERS"],             ["TILBAGE TIL HIROSHIMA"],     "10 min + 30 min","Faerge + Lokaltog",  "faerge"],
+    [["TILBAGE TIL HIROSHIMA"],      ["HONDORI"],                   "10 min",        "Gang",                "gang"],
+    [["PEACE MEMORIAL MUSEUM"],      ["SHINKANSEN TIL TOKYO"],      "15 min",        "Gang til Hiroshima St.", "gang"],
+    [["SHINKANSEN TIL TOKYO"],       ["AFSKEDSMIDDAG"],             "5 min",         "Gang",                "gang"],
+    [["AFSKEDSMIDDAG"],              ["TIL HANEDA","HND TERMINAL"], "15 min",        "Metro · Keikyu → Haneda T3", "metro"],
+    [["ASAKUSA SUMO"],               ["HOTEL","SHINJUKU"],          "25 min",        "Metro · Asakusa → Shinjuku", "metro"],
     // DAG 6 KAMAKURA
-    [["SEND BAGAGE"],                ["DAGSTUR TIL KAMAKURA"],      "55 min Shonan-Shinjuku til Kamakura", "🚇"],
-    [["DAGSTUR TIL KAMAKURA"],       ["KOTOKUIN","BUDDHA"],         "10 min gang fra Kamakura St.", "🚶"],
-    [["KOTOKUIN","BUDDHA"],          ["HASEDERA"],                  "10 min gang", "🚶"],
-    [["HASEDERA"],                   ["FROKOST"],                   "15 min gang", "🚶"],
-    [["FROKOST"],                    ["TOG KAMAKURA","SHINAGAWA"],  "5 min gang til Kamakura St.", "🚶"],
-    [["TOG KAMAKURA","SHINAGAWA"],   ["SHINKANSEN TIL KYOTO"],      "skift til Shinkansen pa Shinagawa", "🚄"],
+    [["SEND BAGAGE"],                ["DAGSTUR TIL KAMAKURA"],      "55 min",        "Lokaltog · Shonan-Shinjuku", "lokaltog"],
+    [["HASEDERA"],                   ["FROKOST"],                   "15 min",        "Gang",                "gang"],
+    [["FROKOST"],                    ["TOG KAMAKURA","SHINAGAWA"],  "5 min",         "Gang til Kamakura St.", "gang"],
     // DAG 10 NARA + KINKAKUJI
-    [["DAGSTUR TIL NARA"],           ["TODAIJI","NARA PARK"],       "10 min gang fra Nara St.", "🚶"],
-    [["TODAIJI","NARA PARK"],        ["KINKAKUJI"],                 "45 min tog + 10 min bus", "🚇"],
-    [["KINKAKUJI"],                  ["RYOANJI"],                   "10 min gang", "🚶"],
-    [["RYOANJI"],                    ["NINENZAKA","SANNENZAKA"],    "30 min bus til Higashiyama", "🚌"],
-    [["NINENZAKA","SANNENZAKA"],     ["AFTENSMAD I GION"],          "10 min gang til Gion", "🚶"],
-
-    // RETUR TIL HOTEL - sidst pa dagen
-    [["OMOIDE","YOKOCHO"],           ["HOTEL","SHINJUKU"],          "5 min gang til hotellet", "🚶"],
-    [["AFTENSMAD"],                  ["HOTEL","NOHGA"],             "10 min gang til hotellet", "🚶"],
-    [["PONTOCHO"],                   ["HOTEL","NOHGA"],             "10 min gang til hotellet", "🚶"],
-    [["AFTENSMAD I GION"],           ["HOTEL","NOHGA"],             "10 min gang til hotellet", "🚶"],
-    [["MIDDAG MED NIKOLAS"],         ["HOTEL","DOUBLETREE"],        "10 min Uber til hotellet", "🚗"],
-    [["DOTONBORI"],                  ["HOTEL","DOUBLETREE"],        "15 min metro til hotellet", "🚇"],
-    [["HONDORI"],                    ["HOTEL","HILTON"],            "15 min gang til hotellet", "🚶"],
-
+    [["RYOANJI"],                    ["NINENZAKA","SANNENZAKA"],    "30 min",        "Bus",                 "bus"],
+    [["NINENZAKA","SANNENZAKA"],     ["AFTENSMAD I GION"],          "10 min",        "Gang",                "gang"],
+    // RETUR TIL HOTEL
+    [["OMOIDE","YOKOCHO"],           ["HOTEL","SHINJUKU"],          "5 min",         "Gang",                "gang"],
+    [["AFTENSMAD"],                  ["HOTEL","NOHGA"],             "10 min",        "Gang",                "gang"],
+    [["PONTOCHO"],                   ["HOTEL","NOHGA"],             "10 min",        "Gang",                "gang"],
+    [["AFTENSMAD I GION"],           ["HOTEL","NOHGA"],             "10 min",        "Gang",                "gang"],
+    [["MIDDAG MED NIKOLAS"],         ["HOTEL","DOUBLETREE"],        "10 min",        "Uber",                "uber"],
+    [["DOTONBORI"],                  ["HOTEL","DOUBLETREE"],        "15 min",        "Metro",               "metro"],
+    [["HONDORI"],                    ["HOTEL","HILTON"],            "15 min",        "Gang",                "gang"],
+    // FAERGE
+    [["MIYAJIMA","ITSUKUSHIMA"],     ["MIYAJIMAGUCHI","FAERGE"],    "10 min",        "Faerge · JR",         "faerge"],
+    [["MIYAJIMAGUCHI","FAERGE"],     ["MIYAJIMA","ITSUKUSHIMA"],    "10 min",        "Faerge · JR",         "faerge"],
+    [["HIROSHIMA","HONDORI"],        ["MIYAJIMAGUCHI"],             "30 min",        "Lokaltog · JR Sanyo", "lokaltog"],
     // HOTEL TIL FORSTE AKTIVITET
-    [["DAIWA","SHINJUKU PREMIER"],   ["METROPOLITAN","GOVERNMENT"],  "10 min gang", "🚶"],
-    [["DAIWA","SHINJUKU PREMIER"],   ["SENSO-JI","ASAKUSA"],         "30 min metro - Oedo Line", "🚇"],
-    [["DAIWA","SHINJUKU PREMIER"],   ["TOG FRA SHINJUKU","KAWAGUCHI"],"5 min gang til Shinjuku St.", "🚶"],
-    [["DAIWA","SHINJUKU PREMIER"],   ["HAMARIKYU"],                   "25 min metro - Oedo Line", "🚇"],
-    [["DAIWA","SHINJUKU PREMIER"],   ["SEND BAGAGE","TAKKYUBIN"],     "Reception i hotellet", "🧳"],
-    [["NOHGA","KIYOMIZU"],           ["ANKOMST KYOTO","CHECK-IN"],    "10 min taxa fra Kyoto St.", "🚗"],
-    [["NOHGA","KIYOMIZU"],           ["KIYOMIZUDERA"],                "10 min gang", "🚶"],
-    [["NOHGA","KIYOMIZU"],           ["SAGANO","BAMBOO"],             "30 min tog til Saga-Arashiyama", "🚇"],
-    [["NOHGA","KIYOMIZU"],           ["DAGSTUR TIL NARA"],            "45 min tog - Kintetsu Line", "🚇"],
-    [["NOHGA","KIYOMIZU"],           ["SHOPPING I KYOTO"],            "10 min gang", "🚶"],
-    [["DOUBLETREE","OSAKA CASTLE"],  ["KUROMON"],                     "15 min metro", "🚇"],
-    [["DOUBLETREE","OSAKA CASTLE"],  ["UMEDA SKY"],                   "20 min metro - Tanimachi Line", "🚇"],
-    [["DOUBLETREE","OSAKA CASTLE"],  ["SEND BAGAGE","TAKKYUBIN"],     "Reception i hotellet", "🧳"],
-    [["HILTON HIROSHIMA"],           ["CHECK-IN HILTON"],             "15 min taxa fra Hiroshima St.", "🚗"],
-    [["HILTON HIROSHIMA"],           ["SEND BAGAGE","TAKKYUBIN"],     "Reception i hotellet", "🧳"],
-    [["HILTON HIROSHIMA"],           ["HIROSHIMA PEACE"],             "15 min gang", "🚶"],
+    [["DAIWA","SHINJUKU PREMIER"],   ["METROPOLITAN","GOVERNMENT"], "10 min",        "Gang",                "gang"],
+    [["DAIWA","SHINJUKU PREMIER"],   ["SENSO-JI","ASAKUSA"],        "30 min",        "Metro · Oedo Line",   "metro"],
+    [["DAIWA","SHINJUKU PREMIER"],   ["TOG FRA SHINJUKU","KAWAGUCHI"],"5 min",       "Gang til Shinjuku St.", "gang"],
+    [["DAIWA","SHINJUKU PREMIER"],   ["HAMARIKYU"],                 "25 min",        "Metro · Oedo Line",   "metro"],
+    [["DAIWA","SHINJUKU PREMIER"],   ["SEND BAGAGE","TAKKYUBIN"],   "",              "Reception i hotellet","bagage"],
+    [["NOHGA","KIYOMIZU"],           ["ANKOMST KYOTO","CHECK-IN"],  "10 min",        "Taxa fra Kyoto St.",  "uber"],
+    [["NOHGA","KIYOMIZU"],           ["KIYOMIZUDERA"],              "10 min",        "Gang",                "gang"],
+    [["NOHGA","KIYOMIZU"],           ["SAGANO","BAMBOO"],           "30 min",        "Lokaltog · Saga-Arashiyama", "lokaltog"],
+    [["NOHGA","KIYOMIZU"],           ["DAGSTUR TIL NARA"],          "45 min",        "Lokaltog · Kintetsu", "lokaltog"],
+    [["NOHGA","KIYOMIZU"],           ["SHOPPING I KYOTO"],          "10 min",        "Gang",                "gang"],
+    [["DOUBLETREE","OSAKA CASTLE"],  ["KUROMON"],                   "15 min",        "Metro",               "metro"],
+    [["DOUBLETREE","OSAKA CASTLE"],  ["UMEDA SKY"],                 "20 min",        "Metro · Tanimachi",   "metro"],
+    [["DOUBLETREE","OSAKA CASTLE"],  ["SEND BAGAGE","TAKKYUBIN"],   "",              "Reception i hotellet","bagage"],
+    [["HILTON HIROSHIMA"],           ["CHECK-IN HILTON"],           "15 min",        "Taxa fra Hiroshima St.", "uber"],
+    [["HILTON HIROSHIMA"],           ["SEND BAGAGE","TAKKYUBIN"],   "",              "Reception i hotellet","bagage"],
+    [["HILTON HIROSHIMA"],           ["HIROSHIMA PEACE"],           "15 min",        "Gang",                "gang"],
   ];
-  for (const [froms, tos, text, icon] of pairs) {
+
+  const TYPE_STYLE = {
+    metro:      { bg:"#ece7f3", color:"#3a2e6b" },
+    lokaltog:   { bg:"#e9f0e7", color:"#2a5c2a" },
+    shinkansen: { bg:"#fce8e8", color:"#7a0a0a" },
+    bus:        { bg:"#f3f0e7", color:"#6b5c0a" },
+    uber:       { bg:"#e8f4f8", color:"#1a5276" },
+    faerge:     { bg:"#e7f6fd", color:"#0a6b7a" },
+    gang:       { bg:"#f0ece7", color:"#7a7068" },
+    bagage:     { bg:"#f7f4ef", color:"#7a7068" },
+  };
+
+  for (const [froms, tos, tid, label, type] of pairs) {
     if (froms.some(k => f.includes(k)) && tos.some(k => t.includes(k))) {
+      const s = TYPE_STYLE[type] || TYPE_STYLE.gang;
       return (
         <div style={{display:"flex",alignItems:"center",gap:6,marginLeft:46,marginBottom:"0.4rem"}}>
           <div style={{width:1,height:14,background:"#ddd8d0",marginLeft:2}}/>
-          <span style={{fontSize:"0.68rem",color:"#7a7068",background:"#f0ece7",border:"1px solid #e8e4de",borderRadius:10,padding:"2px 9px"}}>
-            {icon} {text}
+          <span style={{fontSize:"0.68rem",background:s.bg,color:s.color,border:`1px solid ${s.color}22`,borderRadius:10,padding:"2px 9px",fontWeight:600,letterSpacing:"0.02em"}}>
+            {label}{tid ? <span style={{fontWeight:400,opacity:0.8}}> · {tid}</span> : null}
           </span>
         </div>
       );
@@ -685,7 +802,7 @@ export default function TravelApp() {
   const totalCost = trip.cities.reduce((s,c)=>s+c.days.reduce((s2,d)=>s2+d.activities.reduce((s3,a)=>s3+(a.cost||0),0),0),0);
   const packDone = trip.packing.filter(p=>p.checked).length;
   const packCats = [...new Set(trip.packing.map(p=>p.category))];
-  const tabs = [{id:"plan",icon:"🗺",label:"Rejseplan"},{id:"budget",icon:"💴",label:"Budget"},{id:"valuta",icon:"💱",label:"Valuta"},{id:"ai",icon:"✨",label:"Rejseguide"}];
+  const tabs = [{id:"plan",icon:"🗺",label:"Rejseplan"},{id:"transport",icon:"🚄",label:"Transport"},{id:"budget",icon:"💴",label:"Budget"},{id:"valuta",icon:"💱",label:"Valuta"},{id:"ai",icon:"✨",label:"Rejseguide"}];
 
   return (
     <div style={{fontFamily:"system-ui,sans-serif",background:"#f7f4ef",minHeight:"100vh",maxWidth:700,margin:"0 auto"}}>
@@ -845,6 +962,175 @@ export default function TravelApp() {
         </div>
       )}
 
+      {tab==="transport"&&(
+        <div style={{padding:"1.5rem"}}>
+          <div style={{fontSize:"1.2rem",fontWeight:700,marginBottom:"0.3rem"}}>Transport</div>
+          <div style={{fontSize:"0.82rem",color:"#7a7068",marginBottom:"1.5rem"}}>Alle transportmidler paa turen — betaling, app og stationer</div>
+
+          {/* BETALINGSOVERBLIK */}
+          <div style={{background:"#1a1a2e",borderRadius:8,padding:"1rem 1.2rem",marginBottom:"1.5rem",color:"white"}}>
+            <div style={{fontSize:"0.65rem",letterSpacing:"0.2em",textTransform:"uppercase",color:"#b8860b",marginBottom:"0.6rem"}}>Betalingsoverblik</div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"0.6rem"}}>
+              {[
+                {icon:"💳",label:"Suica IC-kort",desc:"Metro · Lokaltog · Bus · JR-faerge · Butikker"},
+                {icon:"📱",label:"SmartEX-app",desc:"Shinkansen billetter (book paa smart-ex.jp/en)"},
+                {icon:"🚗",label:"Uber-app",desc:"Biler og minivans · hent appen inden afrejse"},
+                {icon:"💴",label:"Kontanter",desc:"Visse busser og faerger · betalingsautomater"},
+              ].map((c,i)=>(
+                <div key={i} style={{background:"rgba(255,255,255,0.07)",borderRadius:6,padding:"0.7rem 0.8rem"}}>
+                  <div style={{fontSize:"1.2rem",marginBottom:3}}>{c.icon}</div>
+                  <div style={{fontSize:"0.78rem",fontWeight:700,marginBottom:2}}>{c.label}</div>
+                  <div style={{fontSize:"0.67rem",color:"rgba(247,244,239,0.6)",lineHeight:1.4}}>{c.desc}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* SHINKANSEN */}
+          <div style={{fontSize:"0.65rem",letterSpacing:"0.15em",textTransform:"uppercase",fontWeight:700,color:"#7a0a0a",marginBottom:"0.5rem"}}>🚄 Shinkansen — book via SmartEX</div>
+          <div style={{background:"white",border:"1px solid #e8e4de",borderRadius:8,marginBottom:"1.2rem",overflow:"hidden"}}>
+            {[
+              {route:"Tokyo → Kyoto",date:"3. juli",dep:"Shinagawa St.",arr:"Kyoto St.",time:"2t 15 min",train:"Hikari",tip:"Book 6 sider ad gangen via SmartEX"},
+              {route:"Kyoto → Osaka",date:"7. juli",dep:"Kyoto St.",arr:"Osaka (Shin-Osaka) St.",time:"15 min",train:"Hikari/Nozomi",tip:"Billig — kan ogsaa tages med Hankyu-tog"},
+              {route:"Osaka → Hiroshima",date:"10. juli",dep:"Shin-Osaka St.",arr:"Hiroshima St.",time:"1t 25 min",train:"Nozomi",tip:"Book via SmartEX"},
+              {route:"Hiroshima → Tokyo",date:"12. juli",dep:"Hiroshima St.",arr:"Tokyo St.",time:"4t",train:"Nozomi",tip:"Book via SmartEX · tidligt afgang anbefales"},
+            ].map((s,i,arr)=>(
+              <div key={i} style={{padding:"0.8rem 1rem",borderBottom:i<arr.length-1?"1px solid #f7f4ef":"none"}}>
+                <div style={{marginBottom:4}}>
+                  <div style={{fontSize:"0.88rem",fontWeight:700,color:"#7a0a0a"}}>{s.route}</div>
+                </div>
+                <div style={{fontSize:"0.72rem",color:"#7a7068",marginBottom:3}}>{s.date} · {s.train} · {s.time}</div>
+                <div style={{display:"flex",gap:6,fontSize:"0.72rem",flexWrap:"wrap"}}>
+                  <span style={{background:"#fce8e8",color:"#7a0a0a",borderRadius:3,padding:"1px 7px",fontWeight:600}}>Af: {s.dep}</span>
+                  <span style={{background:"#fce8e8",color:"#7a0a0a",borderRadius:3,padding:"1px 7px",fontWeight:600}}>An: {s.arr}</span>
+                </div>
+                <div style={{fontSize:"0.68rem",color:"#9a7a5a",marginTop:4,fontStyle:"italic"}}>{s.tip}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* METRO */}
+          <div style={{fontSize:"0.65rem",letterSpacing:"0.15em",textTransform:"uppercase",fontWeight:700,color:"#3a2e6b",marginBottom:"0.5rem"}}>🚇 Metro & subway — betal med Suica</div>
+          <div style={{background:"white",border:"1px solid #e8e4de",borderRadius:8,marginBottom:"1.2rem",overflow:"hidden"}}>
+            {[
+              {city:"Tokyo",line:"Tokyo Metro Marunouchi Line",note:"Fra hotellet: Nishi-Shinjuku St. (5 min gang)",color:"#e60012"},
+              {city:"Tokyo",line:"Toei Oedo Line",note:"Til Asakusa og Hamarikyu",color:"#b51e8c"},
+              {city:"Tokyo",line:"JR Yamanote Line (ringlinje)",note:"Shibuya · Harajuku · Shinjuku · Ueno",color:"#80c241"},
+              {city:"Kyoto",line:"Keihan Line",note:"Fushimi Inari → Shijo (Nishiki market)",color:"#006633"},
+              {city:"Kyoto",line:"Kintetsu Line",note:"Kyoto → Nara (dagstur, 45 min)",color:"#e97700"},
+              {city:"Osaka",line:"Osaka Metro Tanimachi Line",note:"Fra hotellet: Osaka Castle Park-omraadet",color:"#9b59b6"},
+              {city:"Osaka",line:"Osaka Metro Midosuji Line",note:"Namba · Shinsaibashi · Umeda",color:"#e60012"},
+              {city:"Hiroshima",line:"Hiroshima Electric Railway (sporvogn)",note:"Hacchobori St. 3 min gang fra Hilton",color:"#008000"},
+            ].map((m,i,arr)=>(
+              <div key={i} style={{display:"flex",gap:"0.7rem",padding:"0.65rem 1rem",borderBottom:i<arr.length-1?"1px solid #f7f4ef":"none",alignItems:"flex-start"}}>
+                <div style={{width:4,borderRadius:2,background:m.color,flexShrink:0,alignSelf:"stretch",minHeight:36}}/>
+                <div>
+                  <div style={{fontSize:"0.72rem",color:"#9a8a7a",marginBottom:1}}>{m.city}</div>
+                  <div style={{fontSize:"0.82rem",fontWeight:600,color:"#1a1a2e",marginBottom:2}}>{m.line}</div>
+                  <div style={{fontSize:"0.7rem",color:"#7a7068"}}>{m.note}</div>
+                </div>
+              </div>
+            ))}
+            <div style={{background:"#f0ece7",padding:"0.6rem 1rem",fontSize:"0.7rem",color:"#7a7068"}}>
+              Alle metro og subway-linjer betales med Suica IC-kort. Tap ind og ud.
+            </div>
+          </div>
+
+          {/* LOKALTOG */}
+          <div style={{fontSize:"0.65rem",letterSpacing:"0.15em",textTransform:"uppercase",fontWeight:700,color:"#2a5c2a",marginBottom:"0.5rem"}}>🚃 Lokaltog — dagsture og private baner</div>
+          <div style={{background:"white",border:"1px solid #e8e4de",borderRadius:8,marginBottom:"1.2rem",overflow:"hidden"}}>
+            {[
+              {route:"Shinjuku → Kawaguchiko (Fuji)",dep:"Shinjuku St.",arr:"Kawaguchiko St.",time:"ca. 2t",note:"JR + Fujikyu Railway · book i forvejen anbefales",suica:false},
+              {route:"Shinjuku → Kamakura",dep:"Shinjuku St.",arr:"Kamakura St.",time:"55 min",note:"JR Shonan-Shinjuku Line · direkte",suica:true},
+              {route:"Kamakura → Shinagawa",dep:"Kamakura St.",arr:"Shinagawa St.",time:"55 min",note:"JR Yokosuka Line · skift til Shinkansen",suica:true},
+              {route:"Kyoto → Saga-Arashiyama",dep:"Kyoto St.",arr:"Saga-Arashiyama St.",time:"15 min",note:"JR San-in Line (Sagano Line)",suica:true},
+              {route:"Kyoto → Nara (dagstur)",dep:"Kintetsu Kyoto St.",arr:"Kintetsu Nara St.",time:"45 min",note:"Kintetsu Kyoto Line · privat bane · Suica",suica:true},
+              {route:"Osaka → Miyajimaguchi",dep:"Osaka (Shin-Osaka)",arr:"Miyajimaguchi St.",time:"ca. 1t 30 min",note:"JR til Hiroshima, saa lokal til Miyajimaguchi",suica:true},
+              {route:"Hiroshima → Miyajimaguchi",dep:"Hiroshima St.",arr:"Miyajimaguchi St.",time:"28 min",note:"JR Sanyo Line · til Miyajima-faerge",suica:true},
+            ].map((r,i,arr)=>(
+              <div key={i} style={{padding:"0.75rem 1rem",borderBottom:i<arr.length-1?"1px solid #f7f4ef":"none"}}>
+                <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:4}}>
+                  <div style={{fontSize:"0.85rem",fontWeight:700,color:"#2a5c2a"}}>{r.route}</div>
+                  <span style={{fontSize:"0.62rem",fontWeight:700,background:r.suica?"#e7f3eb":"#f7f0e7",color:r.suica?"#2e6b4f":"#9a5c0a",borderRadius:3,padding:"2px 7px",flexShrink:0,marginLeft:6}}>
+                    {r.suica?"✓ Suica":"Billet"}
+                  </span>
+                </div>
+                <div style={{fontSize:"0.7rem",color:"#7a7068",marginBottom:3}}>{r.time} · {r.note}</div>
+                <div style={{display:"flex",gap:6,fontSize:"0.68rem",flexWrap:"wrap"}}>
+                  <span style={{background:"#e9f0e7",color:"#2a5c2a",borderRadius:3,padding:"1px 7px"}}>Af: {r.dep}</span>
+                  <span style={{background:"#e9f0e7",color:"#2a5c2a",borderRadius:3,padding:"1px 7px"}}>An: {r.arr}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* FAERGE */}
+          <div style={{fontSize:"0.65rem",letterSpacing:"0.15em",textTransform:"uppercase",fontWeight:700,color:"#0a6b7a",marginBottom:"0.5rem"}}>⛴ Faerge</div>
+          <div style={{background:"white",border:"1px solid #e8e4de",borderRadius:8,marginBottom:"1.2rem",overflow:"hidden"}}>
+            <div style={{padding:"0.8rem 1rem",borderBottom:"1px solid #f7f4ef"}}>
+              <div style={{fontSize:"0.88rem",fontWeight:700,color:"#0a6b7a",marginBottom:3}}>Miyajimaguchi → Miyajima (Itsukushima)</div>
+              <div style={{fontSize:"0.72rem",color:"#7a7068",marginBottom:6}}>10 min sejltur · afgaar hvert 10-15 min · ingen booking</div>
+              <div style={{display:"flex",gap:6,flexWrap:"wrap"}}>
+                <span style={{background:"#e7f6fd",color:"#0a6b7a",borderRadius:3,padding:"2px 8px",fontSize:"0.7rem",fontWeight:600}}>Tag JR-faergen → betales med Suica</span>
+                <span style={{background:"#e7f6fd",color:"#0a6b7a",borderRadius:3,padding:"2px 8px",fontSize:"0.7rem"}}>Matsuyama-faerge: kontant/kort</span>
+              </div>
+            </div>
+            <div style={{background:"#f0fdff",padding:"0.6rem 1rem",fontSize:"0.7rem",color:"#0a6b7a",lineHeight:1.5}}>
+              Tip: Tag JR-faergen fra Miyajimaguchi St. — betalbar med Suica, ingen koe. Retur med samme faerge.
+            </div>
+          </div>
+
+          {/* BUS */}
+          <div style={{fontSize:"0.65rem",letterSpacing:"0.15em",textTransform:"uppercase",fontWeight:700,color:"#6b5c0a",marginBottom:"0.5rem"}}>🚌 Bus</div>
+          <div style={{background:"white",border:"1px solid #e8e4de",borderRadius:8,marginBottom:"1.2rem",overflow:"hidden"}}>
+            {[
+              {route:"Kawaguchiko — Chureito-pagoden",note:"Bus 2 til Shimo-Yoshida · 10 min",suica:true},
+              {route:"Kinkakuji → Ryoanji",note:"Kyoto by-bus 59 · 10 min",suica:true},
+              {route:"Ryoanji → Higashiyama (Ninenzaka)",note:"Kyoto by-bus 59 → 100 · 30 min",suica:true},
+              {route:"Hiroshima — Peace Park",note:"Sporvogn linje 2 eller 6 fra Hacchobori",suica:true},
+            ].map((b,i,arr)=>(
+              <div key={i} style={{display:"flex",gap:"0.7rem",padding:"0.65rem 1rem",borderBottom:i<arr.length-1?"1px solid #f7f4ef":"none",alignItems:"flex-start"}}>
+                <span style={{fontSize:"1rem",flexShrink:0}}>🚌</span>
+                <div>
+                  <div style={{fontSize:"0.82rem",fontWeight:600,color:"#1a1a2e",marginBottom:2}}>{b.route}</div>
+                  <div style={{display:"flex",gap:6,alignItems:"center",flexWrap:"wrap"}}>
+                    <span style={{fontSize:"0.7rem",color:"#7a7068"}}>{b.note}</span>
+                    <span style={{fontSize:"0.62rem",fontWeight:700,background:b.suica?"#e7f3eb":"#f7f0e7",color:b.suica?"#2e6b4f":"#9a5c0a",borderRadius:3,padding:"1px 6px"}}>
+                      {b.suica?"✓ Suica":"Kontant"}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* UBER & TAXA */}
+          <div style={{fontSize:"0.65rem",letterSpacing:"0.15em",textTransform:"uppercase",fontWeight:700,color:"#1a5276",marginBottom:"0.5rem"}}>🚗 Uber & Taxa</div>
+          <div style={{background:"white",border:"1px solid #e8e4de",borderRadius:8,marginBottom:"1.5rem",overflow:"hidden"}}>
+            {[
+              {who:"Ankomst Tokyo",desc:"Minivan-taxa Haneda HND T3 → Shinjuku hotel",note:"Toyota HiAce til 6 pers. ¥10.000-14.000. Book: airport-taxi.soushin-ichiba.jp/en"},
+              {who:"Kyoto check-in",desc:"Taxa fra Kyoto St. → Nohga Hotel Kiyomizu",note:"Ca. ¥1.200 · 10 min"},
+              {who:"Hiroshima check-in",desc:"Taxa fra Hiroshima St. → Hilton Hiroshima",note:"Ca. ¥1.500 · 15 min"},
+              {who:"Osaka — Middag med Nikolas",desc:"Uber til restaurant",note:"App-Uber: hent appen inden afrejse. Del med 6."},
+            ].map((u,i,arr)=>(
+              <div key={i} style={{padding:"0.75rem 1rem",borderBottom:i<arr.length-1?"1px solid #f7f4ef":"none"}}>
+                <div style={{fontSize:"0.72rem",color:"#1a5276",fontWeight:600,marginBottom:2}}>{u.who}</div>
+                <div style={{fontSize:"0.82rem",fontWeight:600,color:"#1a1a2e",marginBottom:3}}>{u.desc}</div>
+                <div style={{fontSize:"0.7rem",color:"#7a7068"}}>{u.note}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* SUICA INFO BOX */}
+          <div style={{background:"#1a1a2e",borderRadius:8,padding:"1rem 1.2rem",color:"white"}}>
+            <div style={{fontSize:"0.65rem",letterSpacing:"0.2em",textTransform:"uppercase",color:"#b8860b",marginBottom:"0.6rem"}}>💳 Suica IC-kort — husk inden afrejse</div>
+            <div style={{fontSize:"0.8rem",lineHeight:1.7,color:"rgba(247,244,239,0.85)"}}>
+              Saet Suica op paa iPhone via Apple Wallet inden I flyver. Alle 6 skal have eget kort. Bruges til metro, lokaltog, private baner, JR-faergen ved Miyajima, sporvogn i Hiroshima og butikker. Shinkansen betales <span style={{color:"#b8860b",fontWeight:700}}>ikke</span> med Suica — brug SmartEX-appen.
+            </div>
+          </div>
+        </div>
+      )}
+
       {tab==="budget"&&(
         <div style={{padding:"1.5rem"}}>
           <div style={{fontSize:"1.2rem",fontWeight:700,marginBottom:"0.3rem"}}>Budget pr. person</div>
@@ -889,10 +1175,15 @@ export default function TravelApp() {
           </div>
 
           {/* LOKALTOG */}
-          <div style={{fontSize:"0.72rem",fontWeight:600,color:"#1a1a2e",marginBottom:"0.4rem",marginLeft:"0.2rem"}}>🚃 Lokaltog & dagsture</div>
+          <div style={{fontSize:"0.72rem",fontWeight:600,color:"#1a1a2e",marginBottom:"0.4rem",marginLeft:"0.2rem"}}>🚃 Lokaltog & metro (Suica)</div>
           <div style={{background:"white",border:"1px solid #e8e4de",borderRadius:6,marginBottom:"0.8rem",overflow:"hidden"}}>
             {[
-              {label:"Fuji, Kamakura, Nara, Miyajima, Kurama", sub:"Inkl. IC-kort. Se transport-bookingplan PDF", dkk:"ca. 1.069"},
+              {label:"Shinjuku → Kawaguchiko (Fuji)", sub:"Chuo + Fujikyu Railway t/r · dag 4", dkk:"ca. 280"},
+              {label:"Shinjuku → Kamakura t/r", sub:"JR Shonan-Shinjuku Line · dag 6", dkk:"ca. 160"},
+              {label:"Kyoto → Nara t/r", sub:"Kintetsu Line · dag 10", dkk:"ca. 75"},
+              {label:"Kyoto → Saga-Arashiyama t/r", sub:"JR Sagano Line · dag 9", dkk:"ca. 40"},
+              {label:"Hiroshima → Miyajimaguchi t/r", sub:"JR Sanyo Line · dag 15", dkk:"ca. 50"},
+              {label:"Daglig metro Tokyo, Kyoto, Osaka, Hiroshima", sub:"Suica IC-kort — betales løbende", dkk:"ca. 464"},
             ].map((item,i,arr)=>(
               <div key={i} style={{display:"flex",alignItems:"center",gap:"0.8rem",padding:"0.7rem 1rem",borderBottom:i<arr.length-1?"1px solid #f7f4ef":"none"}}>
                 <div style={{flex:1}}>
@@ -902,15 +1193,21 @@ export default function TravelApp() {
                 <div style={{fontSize:"0.85rem",fontWeight:700,color:"#b8860b",whiteSpace:"nowrap"}}>{item.dkk} DKK</div>
               </div>
             ))}
+            <div style={{display:"flex",justifyContent:"space-between",padding:"0.6rem 1rem",background:"#f7f4ef"}}>
+              <span style={{fontSize:"0.78rem",fontWeight:700,color:"#1a1a2e"}}>Total lokaltog & metro</span>
+              <span style={{fontSize:"0.82rem",fontWeight:700,color:"#b8860b"}}>ca. 1.069 DKK</span>
+            </div>
           </div>
 
           {/* UBER / TAXA */}
           <div style={{fontSize:"0.72rem",fontWeight:600,color:"#1a1a2e",marginBottom:"0.4rem",marginLeft:"0.2rem"}}>🚗 Uber & Taxa</div>
           <div style={{background:"white",border:"1px solid #e8e4de",borderRadius:6,marginBottom:"1.2rem",overflow:"hidden"}}>
             {[
-              {label:"Minivan-taxa Haneda → Shinjuku", sub:"27. jun, 6 pers. delt. ¥12.000 total", dkk:"ca. 100"},
-              {label:"Uber til Nikolas, Osaka", sub:"8. juli, 6 pers. delt. ¥2.000 total", dkk:"ca. 17"},
-              {label:"Diverse taxa/Uber", sub:"Estimat hele turen", dkk:"ca. 500"},
+              {label:"Minivan-taxa Haneda → Shinjuku", sub:"28. jun, 6 pers. delt. ¥12.000 total", dkk:"ca. 100"},
+              {label:"Taxa Kyoto St. → Nohga Hotel", sub:"3. jul, 6 pers. delt. ¥1.200 total", dkk:"ca. 10"},
+              {label:"Taxa Hiroshima St. → Hilton", sub:"10. jul, 6 pers. delt. ¥1.500 total", dkk:"ca. 12"},
+              {label:"Uber til Nikolas, Osaka", sub:"8. jul, 6 pers. delt. ¥2.000 total", dkk:"ca. 17"},
+              {label:"Diverse taxa/Uber", sub:"Estimat hele turen", dkk:"ca. 361"},
             ].map((item,i,arr)=>(
               <div key={i} style={{display:"flex",alignItems:"center",gap:"0.8rem",padding:"0.7rem 1rem",borderBottom:i<arr.length-1?"1px solid #f7f4ef":"none"}}>
                 <div style={{flex:1}}>
